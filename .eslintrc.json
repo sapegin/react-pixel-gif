@@ -1,0 +1,6 @@
+{
+  "extends": "tamia",
+  "rules": {
+    "no-var": 0
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "react-pixel-gif",
+  "version": "1.0.0",
+  "description": "1×1 pixel GIF component for React",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "http://sapegin.me"
+  },
+  "homepage": "https://github.com/sapegin/react-pixel-gif",
+  "repository": "sapegin/react-pixel-gif",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "start": "styleguidist server",
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "format": "prettier --write \"**/*.{js,md}\"",
+    "posttest": "npm run format",
+    "precommit": "lint-staged",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "docs": "npm run styleguide:build && npm run deploy",
+    "deploy": "gh-pages -d styleguide-build"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "pixel",
+    "one",
+    "gif",
+    "space",
+    "whitespace"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-tamia": "^6.0.2",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-styleguidist": "^9.0.0-beta1",
+    "webpack": "^4.26.0"
+  },
+  "lint-staged": {
+    "*.{js,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
