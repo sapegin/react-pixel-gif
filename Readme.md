@@ -1,6 +1,6 @@
 # react-pixel-gif
 
-![](https://img.shields.io/badge/blazing-fast-FF8C69.svg) ![](https://img.shields.io/bundlephobia/minzip/react.svg)
+![](https://img.shields.io/badge/blazing-fast-FF8C69.svg) ![](https://img.shields.io/bundlephobia/minzip/react-pixel-gif.svg)
 
 1×1 pixel GIF component for React — give table layouts another chance!
 
